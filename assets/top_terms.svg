@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect x="0" y="0" width="900" height="520" fill="#0b0f19" />
+<text x="50" y="32" fill="#e5e7eb" font-family="ui-sans-serif, system-ui" font-size="18">Top Terms</text>
+<line x1="50" y1="470" x2="850" y2="470" stroke="#334155" stroke-width="2" />
+<rect x="50" y="50" width="44" height="420" rx="8" fill="#60a5fa" />
+<text x="72" y="44" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">13</text>
+<text x="72" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 72 488)">and</text>
+<rect x="104" y="244" width="44" height="226" rx="8" fill="#60a5fa" />
+<text x="126" y="238" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">7</text>
+<text x="126" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 126 488)">recovery</text>
+<rect x="158" y="244" width="44" height="226" rx="8" fill="#60a5fa" />
+<text x="180" y="238" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">7</text>
+<text x="180" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 180 488)">sleep</text>
+<rect x="212" y="374" width="44" height="96" rx="8" fill="#60a5fa" />
+<text x="234" y="368" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">3</text>
+<text x="234" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 234 488)">as</text>
+<rect x="266" y="374" width="44" height="96" rx="8" fill="#60a5fa" />
+<text x="288" y="368" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">3</text>
+<text x="288" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 288 488)">improve</text>
+<rect x="320" y="374" width="44" height="96" rx="8" fill="#60a5fa" />
+<text x="342" y="368" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">3</text>
+<text x="342" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 342 488)">performance</text>
+<rect x="374" y="374" width="44" height="96" rx="8" fill="#60a5fa" />
+<text x="396" y="368" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">3</text>
+<text x="396" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 396 488)">to</text>
+<rect x="428" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="450" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="450" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 450 488)">can</text>
+<rect x="482" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="504" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="504" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 504 488)">health</text>
+<rect x="536" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="558" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="558" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 558 488)">important</text>
+<rect x="590" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="612" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="612" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 612 488)">is</text>
+<rect x="644" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="666" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="666" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 666 488)">long</text>
+<rect x="698" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="720" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="720" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 720 488)">mental</text>
+<rect x="752" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="774" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="774" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 774 488)">on</text>
+<rect x="806" y="406" width="44" height="64" rx="8" fill="#60a5fa" />
+<text x="828" y="400" fill="#cbd5e1" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">2</text>
+<text x="828" y="488" fill="#94a3b8" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle" transform="rotate(25 828 488)">physical</text>
+</svg>
