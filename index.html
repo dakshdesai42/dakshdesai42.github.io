@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daksh Desai | Portfolio</title>
+    <meta name="description" content="Portfolio website for Daksh Desai." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <a class="logo" href="#">Daksh</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Hi, I’m Daksh.</h1>
+        <p class="subtitle">
+          Computer Science student focused on systems, data structures, and shipping real projects.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Productivity Game (Flask)</h3>
+            <p>
+              A journaling-based productivity app that generates AI-driven feedback,
+              scores, and a social leaderboard.
+            </p>
+            <div class="card-links">
+              <a href="#" aria-label="GitHub link">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Data Structures & Algorithms</h3>
+            <p>
+              Implementations and analysis of heaps, BSTs, graphs, and core algorithms
+              from coursework and self-study.
+            </p>
+            <div class="card-links">
+              <a href="#" aria-label="GitHub link">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>C++ Polynomial Engine</h3>
+            <p>
+              Object-oriented polynomial manipulation using STL containers,
+              clean class design, and modular architecture.
+            </p>
+            <div class="card-links">
+              <a href="#" aria-label="GitHub link">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I’m Daksh Desai, a sophomore Computer Science student at Arizona State University.
+          I focus on building strong fundamentals in systems programming and data structures,
+          while consistently shipping projects on GitHub.
+        </p>
+
+        <ul class="pill-row" aria-label="Skills">
+          <li class="pill">C</li>
+          <li class="pill">C++</li>
+          <li class="pill">Python</li>
+          <li class="pill">Linux</li>
+          <li class="pill">Git</li>
+          <li class="pill">Data Structures</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          Email me at
+          <a href="mailto:ddesai35@asu.edu">ddesai35@asu.edu</a>
+          or find me on GitHub:
+        </p>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/Daksh428" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>© <span id="year"></span> Daksh Desai</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
