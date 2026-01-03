@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daksh Desai | Portfolio</title>
-    <meta name="description" content="Portfolio website for Daksh Desai." />
+    <meta name="description" content="Portfolio website for Daksh Desai, Computer Science student." />
 
-    <!-- Monospace accent font -->
+    <meta property="og:title" content="Daksh Desai | CS Portfolio" />
+    <meta property="og:description" content="Systems programming, C++, and data structures." />
+    <meta property="og:type" content="website" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +30,6 @@
     </header>
 
     <main class="container">
-      <!-- Hero -->
       <section class="hero">
         <h1 class="terminal-hero" aria-label="Introduction">
           <span class="prompt">&gt;</span>
@@ -37,7 +39,7 @@
 
         <p class="subtitle">
           Computer Science student focused on systems programming, data structures,
-          and building production-ready projects.
+          and engineering high-performance software.
         </p>
 
         <div class="cta">
@@ -47,13 +49,12 @@
         </div>
       </section>
 
-      <!-- About -->
       <section id="about" class="section" data-section>
         <h2>About</h2>
         <p>
           I’m Daksh Desai, a sophomore Computer Science student at Arizona State University.
-          I focus on building strong fundamentals in systems programming and data structures,
-          while consistently shipping projects on GitHub.
+          I am specializing in low-level systems and data structures, with a commitment to 
+          shipping clean, documented code on GitHub.
         </p>
 
         <ul class="pill-row" aria-label="Skills">
@@ -66,12 +67,10 @@
         </ul>
       </section>
 
-      <!-- Projects -->
       <section id="projects" class="section" data-section>
         <h2>Projects</h2>
 
         <div class="grid">
-          <!-- Productivity Game -->
           <article class="card card-clickable">
             <a
               class="card-overlay"
@@ -83,22 +82,20 @@
 
             <h3>Productivity Game (Flask)</h3>
             <p>
-              Flask-based journaling app concept focused on storing entries and generating
-              productivity scores and feedback, designed to support user history and
-              leaderboard features.
+              Flask-based journaling application that persists user entries and utilizes 
+              algorithms to generate productivity scores and actionable feedback.
             </p>
 
             <div class="card-links">
               <a href="https://github.com/dakshdesai42" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12..." />
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 <span>GitHub</span>
               </a>
             </div>
           </article>
 
-          <!-- Pathfinder -->
           <article class="card card-clickable">
             <a
               class="card-overlay"
@@ -116,10 +113,10 @@
               />
             </div>
 
-            <h3>Pathfinder — Dijkstra Graph Visualizer (C++)</h3>
+            <h3>Pathfinder — Dijkstra (C++)</h3>
             <p>
               C++ implementation of Dijkstra’s shortest-path algorithm using adjacency lists
-              and a min-heap priority queue, with Graphviz export for visual path inspection.
+              and a min-heap, featuring Graphviz integration to visualize search execution.
             </p>
 
             <div class="card-links">
@@ -129,14 +126,13 @@
                 rel="noopener"
               >
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12..." />
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 <span>GitHub</span>
               </a>
             </div>
           </article>
 
-          <!-- Mini Search Engine -->
           <article class="card card-clickable">
             <a
               class="card-overlay"
@@ -149,22 +145,21 @@
             <div class="card-media">
               <img
                 src="assets/top_terms.svg"
-                alt="Top terms SVG chart generated by the Mini Search Engine"
+                alt="Top terms SVG chart"
                 loading="lazy"
               />
             </div>
 
             <h3>Mini Search Engine (C++)</h3>
             <p>
-              Local-file search engine using an inverted index with token normalization,
-              Boolean AND/OR queries, and TF-IDF ranking. Exports a Markdown report and an
-              SVG term-frequency chart for portfolio-ready artifacts.
+              Local-file search engine utilizing an inverted index, token normalization, 
+              and TF-IDF ranking. Generates Markdown reports and SVG charts for data visualization.
             </p>
 
             <div class="card-links">
               <a href="https://github.com/dakshdesai42" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12..." />
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 <span>GitHub</span>
               </a>
@@ -173,19 +168,21 @@
         </div>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="section" data-section>
+      <section id="contact" class="container section" data-section>
         <h2>Contact</h2>
         <p>
-          Email me at
-          <a href="mailto:ddesai35@asu.edu">ddesai35@asu.edu</a>
-          or find me on GitHub:
+          I'm currently looking for internships and new grad opportunities.
+          <br />
+          Drop me a line at <a href="mailto:ddesai35@asu.edu" style="color: var(--text); text-decoration: underline;">ddesai35@asu.edu</a>.
         </p>
 
         <ul class="links">
           <li>
             <a href="https://github.com/dakshdesai42" target="_blank" rel="noopener">
-              GitHub
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <span>GitHub</span>
             </a>
           </li>
         </ul>
