@@ -17,18 +17,25 @@
 
 html,
 body {
-  height: 100%;
+  /* Fix: Use min-height to ensure background covers full scrollable area */
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
     sans-serif;
-  background: radial-gradient(
-    1200px 800px at 20% 0%,
+  
+  /* Fix: Locked background so the glow doesn't cut off or repeat weirdly */
+  background-color: var(--bg);
+  background-image: radial-gradient(
+    1200px 800px at 50% 0%,
     #1b1d2a 0%,
-    var(--bg) 50%
+    transparent 60%
   );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
   color: var(--text);
   line-height: 1.5;
 }
@@ -202,28 +209,37 @@ a[aria-disabled="true"] {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 14px;
-  align-items: stretch; /* makes cards stretch evenly */
+  align-items: stretch;
 }
 
-/* Cards */
-/* styles.css */
-
+/* --- CARDS (Updated for Spotlight) --- */
 .card {
+  /* Spotlight variables default off-screen */
+  --mouse-x: -1000px;
+  --mouse-y: -1000px;
 
   backdrop-filter: blur(10px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
-  background: rgba(255, 255, 255, 0.06);
+  
+  /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.06);
+  
+  /* Spotlight Gradient */
+  background-image: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.15),
+    transparent 40%
+  );
   
   display: flex;         
   flex-direction: column; 
   height: 100%;           
-  
   position: relative;     
   overflow: hidden;       
   border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: var(--radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-
 
 .card h3 {
   margin: 0 0 8px;
@@ -237,7 +253,26 @@ a[aria-disabled="true"] {
 
 .card-links a {
   color: var(--text);
+
+  /* align GitHub icon + text */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
 }
+
+.card-links a:hover {
+  text-decoration: underline;
+}
+
+/* optional: keeps icon size consistent across cards */
+.card-links a svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
 
 /* Hover lift */
 .card:hover {
@@ -258,53 +293,45 @@ a[aria-disabled="true"] {
   z-index: 1;
 }
 
-/* Keep actual links above overlay */
 .card-clickable .card-links {
   position: relative;
   z-index: 2;
 }
 
-/* Keyboard focus for cards */
 .card-overlay:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.45);
   outline-offset: 3px;
 }
 
-/* Project card media (single source of truth — no duplicates) */
 .card-media {
   margin: 0 0 12px;
   border-radius: calc(var(--radius) - 6px);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.02);
-
-  /* Consistent media frame */
   aspect-ratio: 16 / 9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Image/SVG fits inside frame without cropping */
 .card-media img,
 .card-media svg {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* key: never cut off */
+  object-fit: contain;
   opacity: 0.95;
   transform: scale(1);
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* Subtle media lift on card hover */
 .card:hover .card-media img,
 .card:hover .card-media svg {
   transform: scale(1.01);
   opacity: 1;
 }
 
-/* Push GitHub link row to bottom for consistent card height feel */
 .card-links {
   margin-top: auto;
   padding-top: 12px;
@@ -329,19 +356,58 @@ a[aria-disabled="true"] {
   font-family: var(--mono);
 }
 
-/* Contact + footer */
-.links {
-  margin: 12px 0 0;
-  padding-left: 18px;
+/* --- CONTACT & FOOTER (Updated Layout) --- */
+#contact {
+  /* Removed max-width: 600px so it spans the full container width */
+  padding: 80px 0 60px; 
+  text-align: left; /* Explicitly ensure left alignment */
+}
+
+#contact h2 {
+  margin-bottom: 24px;
+}
+
+#contact p {
+  font-size: 1.1rem;
   color: var(--muted);
+  max-width: 800px; /* Optional: Keeps the reading line from getting too long, but keeps alignment left */
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  /* CHANGED: Use inline-flex to align icon and text */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Adds space between the logo and the word 'GitHub' */
+  
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer {
-  padding: 28px 0 40px;
+  padding: 0 0 40px;
   color: var(--muted);
+  /* Align with contact section width if desired, or keep container width */
 }
 
-/* Global focus style */
 :focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.45);
   outline-offset: 3px;
