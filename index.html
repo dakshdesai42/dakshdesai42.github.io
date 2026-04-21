@@ -13,9 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -223,6 +231,8 @@ Mobile-first personal finance tracker with Plaid bank linking, budget management
                 <img
                   src="assets/graph.png"
                   alt="Dijkstra shortest path visualization"
+                  width="507"
+                  height="197"
                   loading="lazy"
                 />
                 <div class="card-media-overlay"></div>
@@ -272,6 +282,8 @@ Mobile-first personal finance tracker with Plaid bank linking, budget management
                 <img
                   src="assets/top_terms.svg"
                   alt="Top terms SVG chart"
+                  width="900"
+                  height="520"
                   loading="lazy"
                 />
                 <div class="card-media-overlay"></div>

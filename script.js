@@ -3,8 +3,13 @@
 // =========================================
 
 // Utility: Check for reduced motion preference
-const prefersReducedMotion = () => 
+const prefersReducedMotion = () =>
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+// Utility: Detect devices with a fine pointer (mouse/trackpad).
+// Excludes touch-only devices where parallax/cursor-glow provide no value.
+const hasFinePointer = () =>
+  window.matchMedia?.('(hover: hover) and (pointer: fine)').matches ?? false;
 
 // =========================================
 // LOADING SCREEN
@@ -18,24 +23,15 @@ const initLoader = () => {
   
   // Create floating particles for loader
   createParticles();
-  
-  // Reduced minimum load time for better UX
-  const minLoadTime = prefersReducedMotion() ? 0 : 1200;
-  const startTime = Date.now();
-  
+
   const hideLoader = () => {
-    const elapsed = Date.now() - startTime;
-    const remaining = Math.max(0, minLoadTime - elapsed);
-    
+    loader.classList.add('hidden');
+    pageWrapper.classList.add('visible');
+
+    // Remove loader from DOM after transition
     setTimeout(() => {
-      loader.classList.add('hidden');
-      pageWrapper.classList.add('visible');
-      
-      // Remove loader from DOM after transition
-      setTimeout(() => {
-        loader.remove();
-      }, 600);
-    }, remaining);
+      loader.remove();
+    }, 600);
   };
   
   // Hide loader when page is fully loaded
@@ -208,7 +204,7 @@ const initHeaderScroll = () => {
 // =========================================
 
 const initCursorGlow = () => {
-  if (prefersReducedMotion()) return;
+  if (prefersReducedMotion() || !hasFinePointer()) return;
   
   const glow = document.createElement('div');
   glow.className = 'cursor-glow';
@@ -254,7 +250,7 @@ const initCursorGlow = () => {
 // =========================================
 
 const initParallaxStarfield = () => {
-  if (prefersReducedMotion()) return;
+  if (prefersReducedMotion() || !hasFinePointer()) return;
 
   const starfield = document.querySelector('.starfield');
   const nebula = document.querySelector('.nebula');
